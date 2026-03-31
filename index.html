@@ -428,7 +428,7 @@
       <div class="field">
         <label>¿Cuánto ejercicio haces a la semana? <span class="req">*</span></label>
         <div class="pill-group">
-          <input type="radio" name="actividad" value="sedentaria" id="act1" required><label for="act1">Casi ninguno</label>
+          <input type="radio" name="actividad" value="sedentaria" id="act1"><label for="act1">Casi ninguno</label>
           <input type="radio" name="actividad" value="ligera" id="act2"><label for="act2">Camino a diario</label>
           <input type="radio" name="actividad" value="moderada" id="act3"><label for="act3">2–3 días de ejercicio</label>
           <input type="radio" name="actividad" value="activa" id="act4"><label for="act4">4–5 días de ejercicio</label>
@@ -461,7 +461,7 @@
       <div class="field">
         <label>¿Cuántas comidas haces al día normalmente? <span class="req">*</span></label>
         <div class="pill-group">
-          <input type="radio" name="num_comidas" value="2" id="nc1" required><label for="nc1">2 comidas</label>
+          <input type="radio" name="num_comidas" value="2" id="nc1"><label for="nc1">2 comidas</label>
           <input type="radio" name="num_comidas" value="3" id="nc2"><label for="nc2">3 comidas</label>
           <input type="radio" name="num_comidas" value="4" id="nc3"><label for="nc3">4 comidas</label>
           <input type="radio" name="num_comidas" value="5" id="nc4"><label for="nc4">5 o más</label>
@@ -481,7 +481,7 @@
       <div class="field">
         <label>¿Picas entre horas? <span class="req">*</span></label>
         <div class="pill-group">
-          <input type="radio" name="picoteo" value="nunca" id="p1" required><label for="p1">Casi nunca</label>
+          <input type="radio" name="picoteo" value="nunca" id="p1"><label for="p1">Casi nunca</label>
           <input type="radio" name="picoteo" value="a_veces" id="p2"><label for="p2">A veces</label>
           <input type="radio" name="picoteo" value="frecuente" id="p3"><label for="p3">Con frecuencia</label>
           <input type="radio" name="picoteo" value="siempre" id="p4"><label for="p4">Casi siempre</label>
@@ -496,7 +496,7 @@
       <div class="field">
         <label>¿Cuánta agua bebes al día? <span class="req">*</span></label>
         <div class="pill-group">
-          <input type="radio" name="agua" value="menos_1l" id="ag1" required><label for="ag1">Menos de 1 litro</label>
+          <input type="radio" name="agua" value="menos_1l" id="ag1"><label for="ag1">Menos de 1 litro</label>
           <input type="radio" name="agua" value="1_2l" id="ag2"><label for="ag2">1–2 litros</label>
           <input type="radio" name="agua" value="mas_2l" id="ag3"><label for="ag3">Más de 2 litros</label>
         </div>
@@ -505,7 +505,7 @@
       <div class="field">
         <label>¿Consumes alcohol? <span class="req">*</span></label>
         <div class="pill-group">
-          <input type="radio" name="alcohol" value="no" id="al1" required><label for="al1">No</label>
+          <input type="radio" name="alcohol" value="no" id="al1"><label for="al1">No</label>
           <input type="radio" name="alcohol" value="ocasional" id="al2"><label for="al2">Ocasionalmente</label>
           <input type="radio" name="alcohol" value="fines_semana" id="al3"><label for="al3">Fines de semana</label>
           <input type="radio" name="alcohol" value="diario" id="al4"><label for="al4">A diario</label>
@@ -544,7 +544,7 @@
       <div class="field">
         <label>¿Cocinas en casa habitualmente? <span class="req">*</span></label>
         <div class="pill-group">
-          <input type="radio" name="cocina" value="siempre" id="co1" required><label for="co1">Siempre</label>
+          <input type="radio" name="cocina" value="siempre" id="co1"><label for="co1">Siempre</label>
           <input type="radio" name="cocina" value="casi_siempre" id="co2"><label for="co2">Casi siempre</label>
           <input type="radio" name="cocina" value="a_veces" id="co3"><label for="co3">A veces</label>
           <input type="radio" name="cocina" value="poco" id="co4"><label for="co4">Poco, prefiero cosas simples</label>
@@ -611,7 +611,7 @@
       <div class="field">
         <label>¿Con qué nivel de motivación estás ahora mismo para cambiar tu alimentación? <span class="req">*</span></label>
         <div class="scale-row">
-          <input type="radio" name="motivacion" value="1" id="mo1" required><label for="mo1">1</label>
+          <input type="radio" name="motivacion" value="1" id="mo1"><label for="mo1">1</label>
           <input type="radio" name="motivacion" value="2" id="mo2"><label for="mo2">2</label>
           <input type="radio" name="motivacion" value="3" id="mo3"><label for="mo3">3</label>
           <input type="radio" name="motivacion" value="4" id="mo4"><label for="mo4">4</label>
@@ -646,10 +646,10 @@
     <div class="success-icon">✓</div>
     <h2>¡Muchas gracias!</h2>
     <p>Tu cuestionario está listo. Pulsa el botón de abajo para enviárselo a Javier por WhatsApp con un solo clic.</p>
-    <button class="whatsapp-btn" onclick="sendWhatsApp()">
+    <a id="whatsappLink" href="#" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
       Enviar por WhatsApp a Javier
-    </button>
+    </a>
   </div>
 
 </div>
@@ -659,99 +659,94 @@
 </div>
 
 <script>
-  let formData = {};
-
   document.getElementById('dietForm').addEventListener('submit', function(e) {
     e.preventDefault();
 
-    // Collect all data
-    const data = new FormData(this);
-    formData = {};
+    // Validación manual en español
+    const nombre = document.querySelector('[name="nombre"]').value.trim();
+    const edad   = document.querySelector('[name="edad"]').value.trim();
+    const peso   = document.querySelector('[name="peso"]').value.trim();
+    const altura = document.querySelector('[name="altura"]').value.trim();
 
-    // Get checkboxes (multiple values)
+    if (!nombre) { alert('Por favor, escribe tu nombre completo.'); return; }
+    if (!edad)   { alert('Por favor, escribe tu edad.'); return; }
+    if (!peso)   { alert('Por favor, escribe tu peso actual.'); return; }
+    if (!altura) { alert('Por favor, escribe tu altura.'); return; }
+
+    // Recoger checkboxes
     const checkboxFields = ['condicion', 'alergia', 'ejercicio', 'hambre_momento'];
+    const fd = {};
     checkboxFields.forEach(field => {
       const checked = [...document.querySelectorAll(`input[name="${field}"]:checked`)].map(el => el.value);
-      formData[field] = checked.length ? checked.join(', ') : 'No indicado';
+      fd[field] = checked.length ? checked.join(', ') : 'No indicado';
     });
 
-    // Get all other fields
+    // Recoger el resto
+    const data = new FormData(this);
     for (let [key, value] of data.entries()) {
-      if (!checkboxFields.includes(key)) {
-        formData[key] = value;
-      }
+      if (!checkboxFields.includes(key)) fd[key] = value;
     }
 
-    // Hide form, show success
+    // Construir mensaje WhatsApp
+    const lines = [
+      'CUESTIONARIO NUTRICIONAL COMPLETO',
+      '--------------------',
+      '',
+      'DATOS PERSONALES',
+      'Nombre: ' + (fd.nombre || '-'),
+      'Edad: ' + (fd.edad || '-') + ' años',
+      'Peso actual: ' + (fd.peso || '-') + ' kg',
+      'Altura: ' + (fd.altura || '-') + ' cm',
+      'Peso objetivo: ' + (fd.peso_objetivo || 'No indicado') + ' kg',
+      '',
+      'SALUD',
+      'Condiciones: ' + (fd.condicion || 'No indicado'),
+      'Medicamentos: ' + (fd.medicamentos || 'No'),
+      'Alergias: ' + (fd.alergia || 'No indicado'),
+      '',
+      'ACTIVIDAD FISICA',
+      'Nivel: ' + (fd.actividad || '-'),
+      'Ejercicio: ' + (fd.ejercicio || 'No indicado'),
+      '',
+      'HABITOS ALIMENTICIOS',
+      'Comidas al dia: ' + (fd.num_comidas || '-'),
+      'Hora desayuno: ' + (fd.hora_desayuno || '-'),
+      'Hora cena: ' + (fd.hora_cena || '-'),
+      'Picoteo: ' + (fd.picoteo || '-'),
+      'Que pica: ' + (fd.que_picas || '-'),
+      'Agua al dia: ' + (fd.agua || '-'),
+      'Alcohol: ' + (fd.alcohol || '-'),
+      '',
+      'PREFERENCIAS',
+      'Tipo de dieta: ' + (fd.tipo_dieta || '-'),
+      'No le gusta: ' + (fd.no_gusta || '-'),
+      'Le encanta: ' + (fd.si_gusta || '-'),
+      'Cocina en casa: ' + (fd.cocina || '-'),
+      '',
+      'DIA TIPICO',
+      'Desayuno: ' + (fd.desayuno_tipico || '-'),
+      'Almuerzo: ' + (fd.almuerzo_tipico || '-'),
+      'Cena: ' + (fd.cena_tipica || '-'),
+      '',
+      'MOTIVACION Y CONTEXTO',
+      'Mayor hambre en: ' + (fd.hambre_momento || '-'),
+      'Dietas previas: ' + (fd.dietas_previas || '-'),
+      'Dificultades: ' + (fd.dificultades || '-'),
+      'Motivacion (1-10): ' + (fd.motivacion || '-'),
+      'Notas extra: ' + (fd.notas_extra || '-'),
+      '',
+      '--------------------',
+      'Enviado desde el formulario de Golf Performance'
+    ];
+
+    const url = 'https://wa.me/34660808725?text=' + encodeURIComponent(lines.join('\n'));
+    document.getElementById('whatsappLink').href = url;
+
+    // Mostrar pantalla de éxito
     document.getElementById('dietForm').style.display = 'none';
     document.getElementById('success').style.display = 'block';
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
-
-  function sendWhatsApp() {
-    const lines = [
-      '🥗 *CUESTIONARIO NUTRICIONAL COMPLETO*',
-      '━━━━━━━━━━━━━━━━━━━━',
-      '',
-      '👤 *DATOS PERSONALES*',
-      `• Nombre: ${formData.nombre || '-'}`,
-      `• Edad: ${formData.edad || '-'} años`,
-      `• Peso actual: ${formData.peso || '-'} kg`,
-      `• Altura: ${formData.altura || '-'} cm`,
-      `• Peso objetivo: ${formData.peso_objetivo || 'No indicado'} kg`,
-      '',
-      '🏥 *SALUD*',
-      `• Condiciones: ${formData.condicion || 'No indicado'}`,
-      `• Medicamentos: ${formData.medicamentos || 'No'}`,
-      `• Alergias/intolerancias: ${formData.alergia || 'No indicado'}`,
-      '',
-      '🏃‍♀️ *ACTIVIDAD FÍSICA*',
-      `• Nivel de actividad: ${formData.actividad || '-'}`,
-      `• Tipo de ejercicio: ${formData.ejercicio || 'No indicado'}`,
-      '',
-      '🍽️ *HÁBITOS ALIMENTICIOS*',
-      `• Comidas al día: ${formData.num_comidas || '-'}`,
-      `• Hora desayuno: ${formData.hora_desayuno || '-'}`,
-      `• Hora cena: ${formData.hora_cena || '-'}`,
-      `• Picoteo: ${formData.picoteo || '-'}`,
-      `• Qué pica: ${formData.que_picas || '-'}`,
-      `• Agua al día: ${formData.agua || '-'}`,
-      `• Alcohol: ${formData.alcohol || '-'}`,
-      '',
-      '✅ *PREFERENCIAS*',
-      `• Tipo de dieta: ${formData.tipo_dieta || '-'}`,
-      `• No le gusta: ${formData.no_gusta || '-'}`,
-      `• Le encanta: ${formData.si_gusta || '-'}`,
-      `• Cocina en casa: ${formData.cocina || '-'}`,
-      '',
-      '📋 *DÍA TÍPICO*',
-      `• Desayuno: ${formData.desayuno_tipico || '-'}`,
-      `• Almuerzo: ${formData.almuerzo_tipico || '-'}`,
-      `• Cena: ${formData.cena_tipica || '-'}`,
-      '',
-      '💭 *MOTIVACIÓN Y CONTEXTO*',
-      `• Mayor hambre en: ${formData.hambre_momento || '-'}`,
-      `• Dietas previas: ${formData.dietas_previas || '-'}`,
-      `• Dificultades: ${formData.dificultades || '-'}`,
-      `• Motivación (1-10): ${formData.motivacion || '-'}`,
-      `• Notas extra: ${formData.notas_extra || '-'}`,
-      '',
-      '━━━━━━━━━━━━━━━━━━━━',
-      '_Enviado desde el formulario de Golf Performance_'
-    ];
-
-    const message = lines.join('\n');
-    const encoded = encodeURIComponent(message);
-    const phone = '34660808725';
-    const url = `https://wa.me/${phone}?text=${encoded}`;
-    const a = document.createElement('a');
-    a.href = url;
-    a.target = '_blank';
-    a.rel = 'noopener noreferrer';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-  }
 </script>
 
 </body>
